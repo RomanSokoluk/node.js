@@ -1,0 +1,92 @@
+
+#black_square {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+#yellow_square {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+}
+
+#red_square {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+#green_rectangle {
+    background-color: green;
+    height: 20px;
+    width: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+#task10-12{
+    position: fixed;
+    top: 20px;
+    right: 15px;
+}
+
+#task10-12 * {
+    color: red;
+    border: 2px solid #73AD21;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#browserLanguage {
+    position: absolute;
+    right: 0px;
+    width: 20px;
+}
+#latitude_longitude {
+    position: absolute;
+    right: 0px;
+    width: 100px;
+}
+
+#task15 {
+    border: 2px solid red;
+    height: 40px;
+}
+
+#element15_1 {
+    border: 2px solid blue;
+    height: 20px;
+}
+
+#element16_2 {
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+#element18 {
+    position: relative;
+    border: 2px solid green;
+    height: 150px;
+    width: 400px;
+}
+#element18_1 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#element18_2 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: 3px solid #73AD21;
+}

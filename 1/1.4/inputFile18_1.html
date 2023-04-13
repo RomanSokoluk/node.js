@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles_1_4.css">
+    <script src="myscript1_4_1.js"></script>
+</head>
+
+<body>
+    <div style="z-Index:-5">
+        <input id="element18_1" type="file" onchange="showFile()">
+    </div>
+    <br>
+    <img src="file.jpg" id="element18_2" style="display:none; position:absolute" alt="file.jpg">
+    <script>
+        DragNDrop(document.getElementById('element18_2'))
+    </script>
+</body>

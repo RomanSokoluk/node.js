@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles_1_4.css">
+    <title>Task_1_4_1</title>
+    <script src="myscript1_4_1.js"></script>
+    <title>Page Title</title>
+</head>
+
+<body onmousemove="showMouseCoordinates()" onunload="seveInputs()" onload="openInputs()">
+    <div id="task1-3">
+        <table id="table_black_square">
+            <th>
+                <div id="black_square"></div>
+            </th>
+            <th>
+                <div id="black_square"></div>
+            </th>
+            <th>
+                <div id="black_square"></div>
+            </th>
+            <th>
+                <div id="black_square"></div>
+            </th>
+            <th>
+                <div id="black_square"></div>
+            </th>
+        </table>
+        <div>
+            <button onclick="displayNone()">CSS (display: none)</button>
+            <button onclick="JSDelet()">JS (удаление элемента)</button>
+            <button onclick="CSS_JS_Hide()">CSS+JS</button>
+        </div>
+    </div>
+    <div id="task4">
+        <input id="inputElement">
+        <button onclick="CSS_Selector()">css selector</button>
+    </div>
+    <div id="task5">
+        <div id="yellow_square" onclick="helloFromTheYellowSquare()"></div>
+    </div>
+    <div id="task6-7">
+        <table>
+            <th>
+                <button onmouseover="showTheRedSquare()" onmouseout="cleaningTheRedSquare()">
+                    красный квадрат</button>
+                <br>
+                <input onfocus="showTheGreenSquare()" oninput="cleaningTheGreenSquare()">
+            </th>
+            <th>
+                <div id="red_square" style="display: none"></div>
+                <div id="green_rectangle" style="display: none"></div>
+            </th>
+        </table>
+    </div>
+    <div id="task8-9">
+        <textarea id="inputUrl"></textarea>
+        <button onclick="Picture_Selector()">
+            picture obtained from the link</button>
+        <table id="picturesTable" style="display: none">
+            <th>
+                <img id="element2" alt="Image">
+            </th>
+        </table>
+    </div>
+    <div id="task10-12">
+        <p id="cursorCoordinates">0:0</p>
+        <p id="browserLanguage"></p>
+        <br>
+        <p id="latitude_longitude"></p>
+        <script>
+            document.getElementById("browserLanguage").innerHTML =
+            navigator.language || navigator.userLanguage;
+            navigator.geolocation.getCurrentPosition((pos)=>
+            document.getElementById("latitude_longitude").innerHTML ="Ш: "+pos.coords.latitude+
+            ", Д: "+pos.coords.longitude);
+            </script>
+    </div>
+    <div id="task13">
+        <input id="element13_1">
+        <input id="element13_2">
+        <input id="element13_3">
+    </div>
+    <div id="task14">
+        <button id="element14_1" onclick="scrollButtonTop()">наверх страницы</button>
+    </div>
+    <div id="task15" onclick="element15Alert()">
+        <div id="element15_1" onclick="element15_1Alert()">
+        </div>
+    </div>
+    <div id="task16-17">
+        <div id="element16_2" style="display:none" onclick="hideTheGraySquare()"></div>
+        <button id="element16_1" onclick="showTheGraySquare()">серый полупрозрачный квадрат</button>
+        <form><input type="button" value="GO"></form>
+    </div>
+    <div id="task18">
+    <iframe src="F:\Sokoluk_Roman\SH++\Etap2\1\1.4\inputFile18_1.html" id="element18"></iframe>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
