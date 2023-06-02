@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/api/v3/styles_3_2.css">
+  <title>Фронт 3.2.3 Адмінка</title>
+  <script src="/api/v3/myscript3_2_html.js"></script>
+</head>
+
+<body>
+  <div id="carentBooks">
+    <h3>Всього книг: {N_Books}</h3>
+    {Table}
+    <div id="moveBathons1">
+      <table id="moveBathons2">
+        <th>
+          {bathonBack}
+        </th>
+        <th> 
+          {bathonForward}
+        </th>
+      </table>
+      <p id="nosing">0</p>
+    </div>
+  </div>
+  <div>
+    <form action="/admin/api/v3/addBook">
+      <input type="text" placeholder="Назва" name="name"><br>
+      <input type="number" placeholder="Рік" name="year"><br>
+      <input type="text" placeholder="Автор1" name="author1"><br>
+      <input type="text" placeholder="Автор2" name="author2"><br>
+      <input type="text" placeholder="Автор3" name="author3"><br>
+      <input type="number" placeholder="Сторінки" name="peges"><br>
+      <input type="text" placeholder="Опис" name="description"><br>
+      <input type="submit" value="Додати"><br>
+      <input id="pictureURL" type="text" name="picture">      
+    </form>
+    <button onclick="LoadPicture_v3()">Загрузить картинку</button><br>
+    <img id="picture" src="/imege/base.png" alt = "base.png" style="width: 200px; height: 200px;"><br>
+  </div>
+  <a href="/admin/api/v3/logout">
+    <button>Вийти</button>
+  </a>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/api/v2/styles_3_2.css">
+  <title>Фронт 3.2 Сторінка з книгами</title>
+  <script src="/api/v2/myscript3_2_html.js"></script>
+</head>
+
+<body onload="makeBooks_v2()" onresize="resize_v2()">
+  <h3>Пошук книг за:</h3>
+  <button onclick="findeNames_v2()" id="selected" name="finde">Назвою</button>
+  <button onclick="findeAuthors_v2()" id="" name="finde">Автором</button>
+  <button onclick="findeYears_v2()" id="" name="finde">Роком</button>
+  <input id="whatSearch">
+  <button onclick="findeBooks_v2()">Шукати</button>
+  <button onclick="makeBooks_v2()">Очистити</button>
+  <div id="Search_for_books"></div>
+  <div id="Existing_books">
+    <h3 id="status_title">Всього книг: 0</h3>
+    <div id="booksTable">
+      <table id="Table">
+      </table>
+    </div>
+  </div>
+  <div id="moveBathons1">
+    <table id="moveBathons2">
+      <th>
+        <button id="bathonBack" onclick="bathonBack_v2()">Назад</button>
+      </th>
+      <th>
+        <button id="bathonForward" onclick="bathonForward_v2()">Вперед</button>
+      </th>
+    </table>
+  </div>
+</body>
+
+</html>
