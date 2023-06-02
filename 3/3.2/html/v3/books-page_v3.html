@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/api/v3/styles_3_2.css">
+  <title>Фронт 3.2.3 Сторінка з книгами</title>
+  <script src="/api/v3/myscript3_2_html.js"></script>
+</head>
+
+<body onload="resize_v3()" onresize="resize_v3()">
+  <a href="/api/v3/books/1">
+    <button>Назад</button>
+  </a>
+  <a href="/api/v3/authorization">
+    <button>Авторизация</button>
+  </a>
+  <h3>Пошук книг за:</h3>
+  <form action="/api/v3/findebooks/1">
+    <input type="radio" id="Name" name="type" value="name" checked>
+    <label for="Name">Назвою</label><br>
+    <input type="radio" id="Author" name="type" value="author">
+    <label for="Author">Автором</label><br>
+    <input type="radio" id="Year" name="type" value="year">
+    <label for="Year">Роком</label>
+    <input type="text" placeholder="Ведені дані" name="data" required>
+    <input type="submit" value="Шукати">
+    <input type="reset" value="Очистити">
+  </form><br>
+  <div id="Existing_books">
+    <h3 id="status_title">Всього книг: {N_Books}</h3>
+    {Table}
+  </div>
+  <div id="moveBathons1">
+    <table id="moveBathons2">
+      <th>
+        {bathonBack}
+      </th>
+      <th> 
+        {bathonForward}
+      </th>
+    </table>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/api/v2/styles_3_2.css">
+  <title>Фронт 3.2 Адмінка</title>
+  <script src="/api/v2/myscript3_2_html.js"></script>
+</head>
+
+<body onload="load3_v2()">
+  <div id="carentBooks">
+    <table id="tableBooks">
+    </table>
+    <div id="moveBathons1">
+      <table id="moveBathons2">
+        <th>
+          <button id="bathonBack" onclick="bathonBack2_v2()">Назад</button>
+        </th>
+        <th>
+          <button id="bathonForward" onclick="bathonForward2_v2()">Вперед</button>
+        </th>
+      </table>
+      <p id="nosing">0</p>
+    </div>
+  </div>
+  <div>
+    <form action="addBook">
+      <input type="text" placeholder="Назва" name="name"><br>
+      <input type="number" placeholder="Рік" name="year"><br>
+      <input type="text" placeholder="Автор1" name="author1"><br>
+      <input type="text" placeholder="Автор2" name="author2"><br>
+      <input type="text" placeholder="Автор3" name="author3"><br>
+      <input type="number" placeholder="Сторінки" name="peges"><br>
+      <input type="text" placeholder="Опис" name="description"><br>
+      <input type="submit" value="Додати"><br>
+      <input id="pictureURL" type="text" name="picture">      
+    </form>
+    <button onclick="LoadPicture_v2()">Загрузить картинку</button><br>
+    <img id="picture" src="/api/v2/base.png" alt = "base.png" style="width: 200px; height: 200px;"><br>
+  </div>
+  <form action="/admin/api/v2/logout">
+    <input type="submit" value="Вийти"><br>
+  </form>
+</body>
+
+</html>
